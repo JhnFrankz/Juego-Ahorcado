@@ -18,6 +18,9 @@ function iniciarJuego() {
     indiceLetrasEncontradas = [];
     contadorErrores = 0;
 
+    //canvas.js
+    separacionTextoX = 0
+
     palabraSecreta = seleccionarPalabraSecreta();
     window.addEventListener("keydown", capturarLetra);
     dibujarTablero(palabraSecreta);

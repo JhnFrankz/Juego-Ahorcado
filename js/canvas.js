@@ -66,14 +66,14 @@ function dibujarLetraCorrecta(tecla) {
 }
 
 //Posicion texto tecleado
-var posicionInicialTextoX = 750;
-var separacionTextoX = 0;
+var separacionTextoX;
 
 function dibujarLetraIncorrecta(letra) {
+    let posicionInicialTextoX = 750;
     pincel.fillStyle = "black";
     pincel.font = "30px serif";
     pincel.fillText(letra, posicionInicialTextoX + separacionTextoX, 400);
-    separacionTextoX += 40;
+    separacionTextoX += 30;
 }
 
 function dibujarMensajePerdiste() {

@@ -1,33 +1,63 @@
-
-body {
-    background: rgb(35, 168, 221);
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
 }
 
-.titulo {
-  padding: 15px;
-  width: 30vw;
-  margin: auto;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body {
+    font-size: 1.6rem;
+}
+
+/** Globales **/
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+body {
+    background: #ffffff9d;
 }
 
 .btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
-  background-color: blue;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 0.5em;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn-primario {
+    color: #ffffff;
+    background: #2626d6;
+    border: 0.1rem solid #2626d6;
+}
+
+.btn-secundario {
+    color: #2626d6;
+    background: transparent;
+    border: 0.1rem solid #2626d6;
+}
+
+.titulo {
+    padding: 3rem 0;
 }
 
 .text-input {
-  border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 0.5em;
-  width: 30%;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    width: 50%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    background: rgb(212, 181, 39);
 }
